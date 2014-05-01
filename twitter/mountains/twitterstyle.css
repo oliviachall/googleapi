@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>twitterstyle</title>
+</head>
+
+<body>
+
+@font-face {
+    font-family: Pacifico;
+    src: url(fonts/Pacifico.ttf);
+}
+
+@font-face {
+    font-family: Avenir Next;
+    src: url(fonts/Avenir Next.ttc);
+}
+
+p {
+    font-family: Avenir Next;
+}
+
+a:link {color:#A5CBA6;}     
+a:visited {color:#A5CBA6;}  
+a:hover {color:#799179;}  
+a:active {color:#799179;}
+
+.username {
+    
+    font-size: larger;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: -.5em;
+    
+    
+    
+}
+
+
+
+img {
+    padding-left: 1.5em;
+    padding-top:  1em;
+    padding-right: 1em;
+    
+
+    
+}
+
+.tweet {
+    padding-left: 6em;
+    padding-right: 1em;
+    
+}
+
+.datetoshow {
+    float: right;
+    display: inline-block;
+    font-size: smaller;
+    padding-right: 2em;
+}
+
+
+
+</body>
+</html>

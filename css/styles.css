@@ -1,0 +1,112 @@
+@font-face {
+    font-family: Pacifico;
+    src: url(../fonts/Pacifico.ttf);
+}
+
+@font-face {
+    font-family: Avenir Next;
+    src: url(../fonts/Avenir Next.ttf);
+}
+
+p, h4, h2, h3 {
+    font-family: Avenir Next;
+}
+
+.container {
+    padding-left: 8em;
+    padding-right: 8em;
+}
+
+.header {
+    margin-top: 2em;
+    margin-bottom: 1em;
+    
+}
+
+h1 {
+    color: #333333;
+}
+
+.panel-body {
+    padding-left: 3em;
+    background: #f7f5f2;
+   
+    
+}
+
+.panel-default>.panel-heading {
+    background-image: url("images/stripe.png");
+    background-repeat: repeat;
+    border: .6em solid #efebe4;
+    
+}
+
+
+.header-back {
+    background: #efebe4;
+    background-image: url("images/stripe.png");
+    background-repeat: repeat;
+}
+
+.footer {
+    background-image: url("images/stripe.png");
+    background-repeat: repeat;
+    height: 2em;
+}
+
+.header-bar {
+    background: #efebe4;
+    height: .6em;
+    
+}
+
+.ncparkstwitter {
+    font-family: Avenir Next;
+    
+}
+
+.stamps {
+    padding-left: 3em;
+    padding-right: 3em;
+    margin-bottom: 2em;
+}
+
+.stickyScroll{
+      position: fixed;
+      bottom: 0em;
+      right: 2em;
+      text-decoration: none;
+      background-color: rgba(0, 0, 0, 0.2);
+      padding: .3em;
+      display: none;
+      border-radius: 5px;
+
+  }
+  
+iframe {
+    border: .3em solid #efebe4;
+    background: white;
+    border-radius: 5px;
+}
+  
+.stickyScroll:hover {
+	background-color: rgba(0, 0, 0, 0.6);
+  }
+
+html { height: 100% }
+body { height: 100%; margin: 0; padding: 0 }
+#map-canvas {
+    height: 500px;
+    border-radius: 5px;
+   
+}
+
+a:link {color:#A5CBA6;}     
+a:visited {color:#A5CBA6;}  
+a:hover {color:#799179;}  
+a:active {color:#799179;}
+
+
+
+</body>
+</html>

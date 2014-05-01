@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"> </script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/smooth-scroll.js"></script>
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdAgVFlCVnH87oo-ommwZtHHWcdvme3eo&sensor=false">
+    </script>
+    
+    
+    <script type="text/javascript">
+      
+    
+      
+      
+      function initialize() {
+        var mapOptions1 = {
+          center: new google.maps.LatLng(35.9333, -79.0333),
+          zoom: 7,
+        };
+        
+        var map = new google.maps.Map(document.getElementById("map-canvas"),
+            mapOptions1);
+      
+        //marker1
+         var marker1 = new google.maps.Marker({
+            position: new google.maps.LatLng(34.0471, -77.9072),
+            map: map,
+            title: 'Carolina Beach',
+            });
+        
+        var contentString1 = '<a href="http://ncparks.gov/Visit/parks/cabe/main.php" target="_blank"><h5>Carolina Beach State Park</h5></a>' +
+        '<p>1010 State Park Road<br/>PO Box 475<br/>Carolina Beach, NC 28428</p>' +
+        '<img src="images/carolinabeach.jpg" alt="Carolina Beach" />'
+        
+        var infowindow1 = new google.maps.InfoWindow({
+            content: contentString1,
+        });
+        
+         google.maps.event.addListener(marker1, 'click', function(){
+            infowindow1.open(map,marker1);
+        });
+        
+        //marker2
+        var marker2 = new google.maps.Marker({
+            position: new google.maps.LatLng(35.2019, -78.9761),
+            map: map,
+            title: 'Carvers Creek',
+            });
+        
+        var contentString2 = '<a href="http://ncparks.gov/Visit/parks/cacr/main.php" target="_blank"><h5>Carvers Creek State Park</h5></a>' +
+        '<p>2505 Long Valley Road<br/>Spring Lake, NC 28390</p>' +
+        '<img src="images/carverscreek.jpg" alt="Carvers Creek" />'
+        
+        var infowindow2 = new google.maps.InfoWindow({
+            content: contentString2,
+        });
+        
+        google.maps.event.addListener(marker2, 'click', function(){
+            infowindow2.open(map,marker2);
+        });
+        
+        //marker3
+        var marker3 = new google.maps.Marker({
+            position: new google.maps.LatLng(35.432799, -82.250260),
+            map: map,
+            title: 'Chimney Rock',
+            });
+        
+        var contentString3 = '<a href="http://ncparks.gov/Visit/parks/chro/main.php" target="_blank"><h5>Chimney Rock State Park</h5></a>' +
+        '<p>PO Box 220<br/>Chimney Rock, NC 28720</p>' +
+        '<img src="images/chimneyrock.jpg" alt="Chimney Rock" />'
+        
+        var infowindow3 = new google.maps.InfoWindow({
+            content: contentString3,
+        });
+        
+        google.maps.event.addListener(marker3, 'click', function(){
+            infowindow3.open(map,marker3);
+        });
+        
+        //marker4
+        var marker4 = new google.maps.Marker({
+            position: new google.maps.LatLng(35.2354, -77.8932),
+            map: map,
+            title: 'Cliffs of the Neuse',
+            });
+        
+        var contentString4 = '<a href="http://ncparks.gov/Visit/parks/clne/main.php" target="_blank"><h5>Cliffs of the Neuse State Park</h5></a>' +
+        '<p>240 Park Entrance Road<br/>Seven Springs, NC 28578</p>' +
+        '<img src="images/cliffsoftheneuse.jpg" alt="Cliffs of the Neuse" />'
+        
+        var infowindow4 = new google.maps.InfoWindow({
+            content: contentString4,
+        });
+        
+        google.maps.event.addListener(marker4, 'click', function(){
+            infowindow4.open(map,marker4);
+        });
+        
+        //marker5
+        var marker5 = new google.maps.Marker({
+            position: new google.maps.LatLng(35.213316, -81.293555),
+            map: map,
+            title: 'Crowders Mountain',
+            });
+        
+        var contentString5 = '<a href="http://ncparks.gov/Visit/parks/crmo/main.php" target="_blank"><h5>Crowders Mountain State Park</h5></a>' +
+        '<p>522 Park Office Lane<br/>Kings Mountain, NC 28086</p>' +
+        '<img src="images/crowdersmountain.jpg" alt="Crowders Mountain" />'
+        
+        var infowindow5 = new google.maps.InfoWindow({
+            content: contentString5,
+        });
+        
+        google.maps.event.addListener(marker5, 'click', function(){
+            infowindow5.open(map,marker5);
+        });
+        
+         //marker6
+        var marker6 = new google.maps.Marker({
+            position: new google.maps.LatLng(36.5057, -76.3551),
+            map: map,
+            title: 'Dismal Swamp',
+            });
+        
+        var contentString6 = '<a href="http://ncparks.gov/Visit/parks/disw/main.php" target="_blank"><h5>Dismal Swamp State Park</h5></a>' +
+        '<p>2294 US 17 North<br/>South Mills, NC 27976</p>' +
+        '<img src="images/dismalswamp.jpg" alt="Dismal Swamp" />'
+        
+        var infowindow6 = new google.maps.InfoWindow({
+            content: contentString6,
+        });
+        
+        google.maps.event.addListener(marker6, 'click', function(){
+            infowindow6.open(map,marker6);
+        });
+        
+          //marker7
+        var marker7 = new google.maps.Marker({
+            position: new google.maps.LatLng(36.332586, -81.69064),
+            map: map,
+            title: 'Elk Knob',
+            });
+        
+        var contentString7 = '<a href="http://ncparks.gov/Visit/parks/elkn/main.php" target="_blank"><h5>Elk Knob State Park</h5></a>' +
+        '<p>5564 Meat Camp Road<br/>Todd, NC 28684</p>' +
+        '<img src="images/elkknob.jpg" alt="Elk Knob" />'
+        
+        var infowindow7 = new google.maps.InfoWindow({
+            content: contentString7,
+        });
+        
+        google.maps.event.addListener(marker7, 'click', function(){
+            infowindow7.open(map,marker7);
+        });
+        
+         //marker8
+        var marker8 = new google.maps.Marker({
+            position: new google.maps.LatLng(36.0783, -79.0050),
+            map: map,
+            title: 'Eno River',
+            });
+        
+        var contentString8 = '<a href="http://ncparks.gov/Visit/parks/enri/main.php" target="_blank"><h5>Eno River State Park</h5></a>' +
+        '<p>6101 Cole Mill Road<br/>Durham, NC 27705</p>' +
+        '<img src="images/enoriver.jpg" alt="Eno River" />'
+        
+        var infowindow8 = new google.maps.InfoWindow({
+            content: contentString8,
+        });
+        
+        google.maps.event.addListener(marker8, 'click', function(){
+            infowindow8.open(map,marker8);
+        });
+        
+         //marker9
+        var marker9 = new google.maps.Marker({
+            position: new google.maps.LatLng(36.0117, -78.6888),
+            map: map,
+            title: 'Falls Lake',
+            });
+        
+        var contentString9 = '<a href="http://ncparks.gov/Visit/parks/fala/main.php" target="_blank"><h5>Falls Lake State Recreation Area</h5></a>' +
+        '<p>13304 Creedmoor Road<br/>Wake Forest, NC 27587</p>' +
+        '<img src="images/fallslake.jpg" alt="Falls Lake" />'
+        
+        var infowindow9 = new google.maps.InfoWindow({
+            content: contentString9,
+        });
+        
+        google.maps.event.addListener(marker9, 'click', function(){
+            infowindow9.open(map,marker9);
+        });
+        
+        //marker10
+        var marker10 = new google.maps.Marker({
+            position: new google.maps.LatLng(33.9534, -77.929),
+            map: map,
+            title: 'Fort Fisher',
+            });
+        
+        var contentString10 = '<a href="http://ncparks.gov/Visit/parks/fofi/main.php" target="_blank"><h5>Fort Fisher State Recreation Area</h5></a>' +
+        '<p>1000 Loggerhead Road<br/>Kure Beach, NC 28449</p>' +
+        '<img src="images/fortfisher.jpg" alt="Fort Fisher" />'
+        
+        var infowindow10 = new google.maps.InfoWindow({
+            content: contentString10,
+        });
+        
+        google.maps.event.addListener(marker10, 'click', function(){
+            infowindow10.open(map,marker10);
+        });
+        
+         //marker11
+        var marker11 = new google.maps.Marker({
+            position: new google.maps.LatLng(34.697952, -76.67834),
+            map: map,
+            title: 'Fort Macon',
+            });
+        
+        var contentString11 = '<a href="http://ncparks.gov/Visit/parks/foma/main.php" target="_blank"><h5>Fort Macon State Park</h5></a>' +
+        '<p>2303 East Fort Macon Road<br/>Atlantic Beach, NC 28512</p>' +
+        '<img src="images/fortmacon.jpg" alt="Fort Macon" />'
+        
+        var infowindow11 = new google.maps.InfoWindow({
+            content: contentString11,
+        });
+        
+        google.maps.event.addListener(marker11, 'click', function(){
+            infowindow11.open(map,marker11);
+        });
+        
+          //marker12
+        var marker12 = new google.maps.Marker({
+            position: new google.maps.LatLng(35.481853, -76.901414),
+            map: map,
+            title: 'Goose Creek',
+            });
+        
+        var contentString12 = '<a href="http://ncparks.gov/Visit/parks/gocr/main.php" target="_blank"><h5>Goose Creek State Park</h5></a>' +
+        '<p>2190 Camp Leach Road<br/>Washington, NC 27889</p>' +
+        '<img src="images/goosecreek.jpg" alt="Goose Creek" />'
+        
+        var infowindow12 = new google.maps.InfoWindow({
+            content: contentString12,
+        });
+        
+        google.maps.event.addListener(marker12, 'click', function(){
+            infowindow12.open(map,marker12);
+        });
+        
+        //marker13
+        var marker13 = new google.maps.Marker({
+            position: new google.maps.LatLng(35.097, -82.9522),
+            map: map,
+            title: 'Gorges',
+            });
+        
+        var contentString13 = '<a href="http://ncparks.gov/Visit/parks/gorg/main.php" target="_blank"><h5>Gorges State Park</h5></a>' +
+        '<p>976 Grassy Ridge Road<br/>Sapphire, NC 28774</p>' +
+        '<img src="images/gorges.jpg" alt="Gorges" />'
+        
+        var infowindow13 = new google.maps.InfoWindow({
+            content: contentString13,
+        });
+        
+        google.maps.event.addListener(marker13, 'click', function(){
+            infowindow13.open(map,marker13);
+        });
+        
+        //marker14
+        var marker14 = new google.maps.Marker({
+            position: new google.maps.LatLng(36.11139, -81.81250),
+            map: map,
+            title: 'Grandfather Mountain',
+            });
+        
+        var contentString14 = '<a href="http://ncparks.gov/Visit/parks/grmo/main.php" target="_blank"><h5>Grandfather Mountain State Park</h5></a>' +
+        '<p>P.O. Box 9<br/>Linville, NC 28646</p>' +
+        '<img src="images/grandfathermountain.jpg" alt="Grandfather Mountain" />'
+        
+        var infowindow14 = new google.maps.InfoWindow({
+            content: contentString14,
+        });
+        
+        google.maps.event.addListener(marker14, 'click', function(){
+            infowindow14.open(map,marker14);
+        });
+        
+        //marker15
+        var marker15 = new google.maps.Marker({
+            position: new google.maps.LatLng(34.6710, -77.1429),
+            map: map,
+            title: 'Hammocks Beach',
+            });
+        
+        var contentString15 = '<a href="http://ncparks.gov/Visit/parks/habe/main.php" target="_blank"><h5>Hammocks Beach State Park</h5></a>' +
+        '<p>1572 Hammocks Beach Road<br/>Swansboro, NC 28584</p>' +
+        '<img src="images/hammocksbeach.jpg" alt="Hammocks Beach" />'
+        
+        var infowindow15 = new google.maps.InfoWindow({
+            content: contentString15,
+        });
+        
+        google.maps.event.addListener(marker15, 'click', function(){
+            infowindow15.open(map,marker15);
+        });
+        
+        //marker16
+        var marker16 = new google.maps.Marker({
+            position: new google.maps.LatLng(36.411906, -80.254122),
+            map: map,
+            title: 'Hanging Rock',
+            });
+        
+        var contentString16 = '<a href="http://ncparks.gov/Visit/parks/haro/main.php" target="_blank"><h5>Hanging Rock State Park</h5></a>' +
+        '<p>1790 Hanging Rock Park Road<br/>Danbury, NC 27016</p>' +
+        '<img src="images/hangingrock.jpg" alt="Hanging Rock" />'
+        
+        var infowindow16 = new google.maps.InfoWindow({
+            content: contentString16,
+        });
+        
+        google.maps.event.addListener(marker16, 'click', function(){
+            infowindow16.open(map,marker16);
+        });
+        
+        //marker17
+        var marker17 = new google.maps.Marker({
+            position: new google.maps.LatLng(36.250646, -79.756364),
+            map: map,
+            title: 'Haw River',
+            });
+        
+        var contentString17 = '<a href="http://ncparks.gov/Visit/parks/hari/main.php" target="_blank"><h5>Haw River State Park</h5></a>' +
+        '<p>339 Conference Center Drive<br/>Browns Summit, NC 27214</p>' +
+        '<img src="images/hawriver.jpg" alt="Haw River" />'
+        
+        var infowindow17 = new google.maps.InfoWindow({
+            content: contentString17,
+        });
+        
+        google.maps.event.addListener(marker17, 'click', function(){
+            infowindow17.open(map,marker17);
+        });
+        
+        //marker18
+        var marker18 = new google.maps.Marker({
+            position: new google.maps.LatLng(35.9642, -75.6330),
+            map: map,
+            title: 'Jockeys Ridge',
+            });
+        
+        var contentString18 = '<a href="http://ncparks.gov/Visit/parks/jori/main.php" target="_blank"><h5>Jockeys Ridge State Park</h5></a>' +
+        '<p>300 W. Carolista Drive<br/>Nags Head, NC 27959</p>' +
+        '<img src="images/jockeysridge.jpg" alt="Jockeys Ridge" />'
+        
+        var infowindow18 = new google.maps.InfoWindow({
+            content: contentString18,
+        });
+        
+        google.maps.event.addListener(marker18, 'click', function(){
+            infowindow18.open(map,marker18);
+        });
+        
+        //marker19
+        var marker19 = new google.maps.Marker({
+            position: new google.maps.LatLng(34.682743, -78.595423),
+            map: map,
+            title: 'Jones Lake',
+            });
+        
+        var contentString19 = '<a href="http://ncparks.gov/Visit/parks/jone/main.php" target="_blank"><h5>Jones Lake State Park</h5></a>' +
+        '<p>4117 Hwy 242 N<br/>Elizabethtown, NC 28337</p>' +
+        '<img src="images/joneslake.jpg" alt="Jones Lake" />'
+        
+        var infowindow19 = new google.maps.InfoWindow({
+            content: contentString19,
+        });
+        
+        google.maps.event.addListener(marker19, 'click', function(){
+            infowindow19.open(map,marker19);
+        });
+        
+        //marker20
+        var marker20 = new google.maps.Marker({
+            position: new google.maps.LatLng(35.7369, -79.0169),
+            map: map,
+            title: 'Jordan Lake',
+            });
+        
+        var contentString20 = '<a href="http://ncparks.gov/Visit/parks/jord/main.php" target="_blank"><h5>Jordan Lake State Recreation Area</h5></a>' +
+        '<p>280 State Park Road<br/>Apex, NC 27523</p>' +
+        '<img src="images/jordanlake.jpg" alt="Jordan Lake" />'
+        
+        var infowindow20 = new google.maps.InfoWindow({
+            content: contentString20,
+        });
+        
+        google.maps.event.addListener(marker20, 'click', function(){
+            infowindow20.open(map,marker20);
+        });
+        
+        //marker21
+        var marker21 = new google.maps.Marker({
+            position: new google.maps.LatLng(36.4411, -78.3688),
+            map: map,
+            title: 'Kerr Lake',
+            });
+        
+        var contentString21 = '<a href="http://ncparks.gov/Visit/parks/kela/main.php" target="_blank"><h5>Kerr Lake State Recreation Area</h5></a>' +
+        '<p>6254 Satterwhite Point Road<br/>Henderson, NC 27537</p>' +
+        '<img src="images/kerrlake.jpg" alt="Kerr Lake" />'
+        
+        var infowindow21 = new google.maps.InfoWindow({
+            content: contentString21,
+        });
+        
+        google.maps.event.addListener(marker21, 'click', function(){
+            infowindow21.open(map,marker21);
+        });
+        
+        //marker22
+        var marker22 = new google.maps.Marker({
+            position: new google.maps.LatLng(35.728710, -81.901123),
+            map: map,
+            title: 'Lake James',
+            });
+        
+        var contentString22 = '<a href="http://ncparks.gov/Visit/parks/laja/main.php" target="_blank"><h5>Lake James State Park</h5></a>' +
+        '<p>P.O. Box 340<br/>6883 NC Hwy 126<br/>Nebo, NC 28761</p>' +
+        '<img src="images/lakejames.jpg" alt="Lake James" />'
+        
+        var infowindow22 = new google.maps.InfoWindow({
+            content: contentString22,
+        });
+        
+        google.maps.event.addListener(marker22, 'click', function(){
+            infowindow22.open(map,marker22);
+        });
+        
+        //marker23
+        var marker23 = new google.maps.Marker({
+            position: new google.maps.LatLng(35.6652, -80.9421),
+            map: map,
+            title: 'Lake Norman',
+            });
+        
+        var contentString23 = '<a href="http://ncparks.gov/Visit/parks/lano/main.php" target="_blank"><h5>Lake Norman State Park</h5></a>' +
+        '<p>159 Inland Sea Lane<br/>Troutman, NC 28166</p>' +
+        '<img src="images/lakenorman.jpg" alt="Lake Norman" />'
+        
+        var infowindow23 = new google.maps.InfoWindow({
+            content: contentString23,
+        });
+        
+        google.maps.event.addListener(marker23, 'click', function(){
+            infowindow23.open(map,marker23);
+        });
+        
+        //marker24
+        var marker24 = new google.maps.Marker({
+            position: new google.maps.LatLng(34.278985, -78.465485),
+            map: map,
+            title: 'Lake Waccamaw',
+            });
+        
+        var contentString24 = '<a href="http://ncparks.gov/Visit/parks/lawa/main.php" target="_blank"><h5>Lake Waccamaw State Park</h5></a>' +
+        '<p>1866 State Park Drive<br/>Lake Waccamaw, NC 28450</p>' +
+        '<img src="images/lakewaccamaw.jpg" alt="Lake Waccamaw" />'
+        
+        var infowindow24 = new google.maps.InfoWindow({
+            content: contentString24,
+        });
+        
+        google.maps.event.addListener(marker24, 'click', function(){
+            infowindow24.open(map,marker24);
+        });
+        
+        //marker25
+        var marker25 = new google.maps.Marker({
+            position: new google.maps.LatLng(34.390023, -79.002225),
+            map: map,
+            title: 'Lumber River',
+            });
+        
+        var contentString25 = '<a href="http://ncparks.gov/Visit/parks/luri/main.php" target="_blank"><h5>Lumber River State Park</h5></a>' +
+        '<p>2819 Princess Ann Road<br/>Orrum, NC 28369</p>' +
+        '<img src="images/lumberriver.jpg" alt="Lumber River" />'
+        
+        var infowindow25 = new google.maps.InfoWindow({
+            content: contentString25,
+        });
+        
+        google.maps.event.addListener(marker25, 'click', function(){
+            infowindow25.open(map,marker25);
+        });
+        
+        //marker26
+        var marker26 = new google.maps.Marker({
+            position: new google.maps.LatLng(36.438800, -79.938171),
+            map: map,
+            title: 'Mayo River',
+            });
+        
+        var contentString26 = '<a href="http://ncparks.gov/Visit/parks/mari/main.php" target="_blank"><h5>Mayo River State Park</h5></a>' +
+        '<p>500 Old Mayo Park Road<br/>Mayodan, NC 27027</p>' +
+        '<img src="images/mayoriver.jpg" alt="Mayo River" />'
+        
+        var infowindow26 = new google.maps.InfoWindow({
+            content: contentString26,
+        });
+        
+        google.maps.event.addListener(marker26, 'click', function(){
+            infowindow26.open(map,marker26);
+        });
+        
+        //marker27
+        var marker27 = new google.maps.Marker({
+            position: new google.maps.LatLng(36.2639, -77.8883),
+            map: map,
+            title: 'Medoc Mountain',
+            });
+        
+        var contentString27 = '<a href="http://ncparks.gov/Visit/parks/memo/main.php" target="_blank"><h5>Medoc Mountain State Park</h5></a>' +
+        '<p>1541 Medoc State Park Road<br/>Hollister, NC 27844</p>' +
+        '<img src="images/medocmountain.jpg" alt="Medoc Mountain" />'
+        
+        var infowindow27 = new google.maps.InfoWindow({
+            content: contentString27,
+        });
+        
+        google.maps.event.addListener(marker27, 'click', function(){
+            infowindow27.open(map,marker27);
+        });
+        
+        //marker28
+        var marker28 = new google.maps.Marker({
+            position: new google.maps.LatLng(36.437105, -76.701585),
+            map: map,
+            title: 'Merchants Millpond',
+            });
+        
+        var contentString28 = '<a href="http://ncparks.gov/Visit/parks/memi/main.php" target="_blank"><h5>Merchants Millpond State Park</h5></a>' +
+        '<p>176 Millpond Road<br/>Gatesville, NC 27938</p>' +
+        '<img src="images/merchantsmillpond.jpg" alt="Merchants Millpond" />'
+        
+        var infowindow28 = new google.maps.InfoWindow({
+            content: contentString28,
+        });
+        
+        google.maps.event.addListener(marker28, 'click', function(){
+            infowindow28.open(map,marker28);
+        });
+        
+        //marker29
+        var marker29 = new google.maps.Marker({
+            position: new google.maps.LatLng(35.373724, -80.073477),
+            map: map,
+            title: 'Morrow Mountain',
+            });
+        
+        var contentString29 = '<a href="http://ncparks.gov/Visit/parks/momo/main.php" target="_blank"><h5>Morrow Mountain State Park</h5></a>' +
+        '<p>49104 Morrow Mountain Road<br/>Albemarle, NC 28001</p>' +
+        '<img src="images/morrowmountain.jpg" alt="Morrow Mountain" />'
+        
+        var infowindow29 = new google.maps.InfoWindow({
+            content: contentString29,
+        });
+        
+        google.maps.event.addListener(marker29, 'click', function(){
+            infowindow29.open(map,marker29);
+        });
+        
+        //marker30
+        var marker30 = new google.maps.Marker({
+            position: new google.maps.LatLng(36.397660, -81.473466),
+            map: map,
+            title: 'Mount Jefferson',
+            });
+        
+        var contentString30 = '<a href="http://ncparks.gov/Visit/parks/moje/main.php" target="_blank"><h5>Mount Jefferson State Natural Area</h5></a>' +
+        '<p>1481 Mt Jefferson State Park Road<br/>West Jefferson, NC 28694</p>' +
+        '<img src="images/mountjefferson.jpg" alt="Mount Jefferson" />'
+        
+        var infowindow30 = new google.maps.InfoWindow({
+            content: contentString30,
+        });
+        
+        google.maps.event.addListener(marker30, 'click', function(){
+            infowindow30.open(map,marker30);
+        });
+        
+        //marker31
+        var marker31 = new google.maps.Marker({
+            position: new google.maps.LatLng(35.7528, -82.2737),
+            map: map,
+            title: 'Mount Mitchell',
+            });
+        
+        var contentString31 = '<a href="http://ncparks.gov/Visit/parks/momi/main.php" target="_blank"><h5>Mount Mitchell State Park</h5></a>' +
+        '<p>2388 State Highway 128<br/>Burnsville, NC 28714</p>' +
+        '<img src="images/mountmitchell.jpg" alt="Mount Mitchell" />'
+        
+        var infowindow31 = new google.maps.InfoWindow({
+            content: contentString31,
+        });
+        
+        google.maps.event.addListener(marker31, 'click', function(){
+            infowindow31.open(map,marker31);
+        });
+        
+        //marker32
+        var marker32 = new google.maps.Marker({
+            position: new google.maps.LatLng(36.467680, -81.340350),
+            map: map,
+            title: 'New River',
+            });
+        
+        var contentString32 = '<a href="http://ncparks.gov/Visit/parks/neri/main.php" target="_blank"><h5>New River State Park</h5></a>' +
+        '<p>358 New River State Park Road<br/>Laurel Springs, NC 28644</p>' +
+        '<img src="images/newriver.jpg" alt="New River" />'
+        
+        var infowindow32 = new google.maps.InfoWindow({
+            content: contentString32,
+        });
+        
+        google.maps.event.addListener(marker32, 'click', function(){
+            infowindow32.open(map,marker32);
+        });
+        
+        //marker33
+        var marker33 = new google.maps.Marker({
+            position: new google.maps.LatLng(36.060835, -79.116900),
+            map: map,
+            title: 'Occoneechee',
+            });
+        
+        var contentString33 = '<a href="http://ncparks.gov/Visit/parks/ocmo/main.php" target="_blank"><h5>Occoneechee Mountain State Natural Area</h5></a>' +
+        '<p>625 Virginia Cates Road<br/>Durham, NC 27705</p>' +
+        '<img src="images/occoneecheemountain.jpg" alt="Occoneechee" />'
+        
+        var infowindow33 = new google.maps.InfoWindow({
+            content: contentString33,
+        });
+        
+        google.maps.event.addListener(marker33, 'click', function(){
+            infowindow33.open(map,marker33);
+        });
+        
+        //marker34
+        var marker34 = new google.maps.Marker({
+            position: new google.maps.LatLng(35.473203, -76.243417),
+            map: map,
+            title: 'Pettigrew',
+            });
+        
+        var contentString34 = '<a href="http://ncparks.gov/Visit/parks/pett/main.php" target="_blank"><h5>Pettigrew State Park</h5></a>' +
+        '<p>2252 Lake Shore Road<br/>Creswell, NC 27928</p>' +
+        '<img src="images/pettigrew.jpg" alt="Pettigrew" />'
+        
+        var infowindow34 = new google.maps.InfoWindow({
+            content: contentString34,
+        });
+        
+        google.maps.event.addListener(marker34, 'click', function(){
+            infowindow34.open(map,marker34);
+        });
+        
+        //marker35
+        var marker35 = new google.maps.Marker({
+            position: new google.maps.LatLng(36.342056, -80.463347),
+            map: map,
+            title: 'Pilot Mountain',
+            });
+        
+        var contentString35 = '<a href="http://ncparks.gov/Visit/parks/pimo/main.php" target="_blank"><h5>Pilot Mountain State Park</h5></a>' +
+        '<p>1792 Pilot Knob Park Road<br/>Pinnacle, NC 27043</p>' +
+        '<img src="images/pilotmountain.jpg" alt="Pilot Mountain" />'
+        
+        var infowindow35 = new google.maps.InfoWindow({
+            content: contentString35,
+        });
+        
+        google.maps.event.addListener(marker35, 'click', function(){
+            infowindow35.open(map,marker35);
+        });
+        
+        //marker36
+        var marker36 = new google.maps.Marker({
+            position: new google.maps.LatLng(35.4597, -78.9127),
+            map: map,
+            title: 'Raven Rock',
+            });
+        
+        var contentString36 = '<a href="http://ncparks.gov/Visit/parks/raro/main.php" target="_blank"><h5>Raven Rock State Park</h5></a>' +
+        '<p>3009 Raven Rock Road<br/>Lillington, NC 27546</p>' +
+        '<img src="images/ravenrock.jpg" alt="Raven Rock" />'
+        
+        var infowindow36 = new google.maps.InfoWindow({
+            content: contentString36,
+        });
+        
+        google.maps.event.addListener(marker36, 'click', function(){
+            infowindow36.open(map,marker36);
+        });
+        
+        //marker37
+        var marker37 = new google.maps.Marker({
+            position: new google.maps.LatLng(34.5831, -78.4496),
+            map: map,
+            title: 'Singletary Lake',
+            });
+        
+        var contentString37 = '<a href="http://ncparks.gov/Visit/parks/sila/main.php" target="_blank"><h5>Singletary Lake State Park</h5></a>' +
+        '<p>6707 NC 53 Hwy. East<br/>Kelly, NC 28448</p>' +
+        '<img src="images/singletarylake.jpg" alt="Singletary Lake" />'
+        
+        var infowindow37 = new google.maps.InfoWindow({
+            content: contentString37,
+        });
+        
+        google.maps.event.addListener(marker37, 'click', function(){
+            infowindow37.open(map,marker37);
+        });
+        
+        //marker38
+        var marker38 = new google.maps.Marker({
+            position: new google.maps.LatLng(35.5963, -81.6000),
+            map: map,
+            title: 'South Mountains',
+            });
+        
+        var contentString38 = '<a href="http://ncparks.gov/Visit/parks/somo/main.php" target="_blank"><h5>South Mountains State Park</h5></a>' +
+        '<p>3001 South Mountain Park Avenue<br/>Connelly Springs, NC 28612</p>' +
+        '<img src="images/southmountains.jpg" alt="South Mountains" />'
+        
+        var infowindow38 = new google.maps.InfoWindow({
+            content: contentString38,
+        });
+        
+        google.maps.event.addListener(marker38, 'click', function(){
+            infowindow38.open(map,marker38);
+        });
+        
+        //marker39
+        var marker39 = new google.maps.Marker({
+            position: new google.maps.LatLng(36.3873, -81.0273),
+            map: map,
+            title: 'Stone Mountain',
+            });
+        
+        var contentString39 = '<a href="http://ncparks.gov/Visit/parks/stmo/main.php" target="_blank"><h5>Stone Mountain State Park</h5></a>' +
+        '<p>3042 Frank Parkway<br/>Roaring Gap, NC 28668</p>' +
+        '<img src="images/stonemountain.jpg" alt="Stone Mountain" />'
+        
+        var infowindow39 = new google.maps.InfoWindow({
+            content: contentString39,
+        });
+        
+        google.maps.event.addListener(marker39, 'click', function(){
+            infowindow39.open(map,marker39);
+        });
+        
+        //marker40
+        var marker40 = new google.maps.Marker({
+            position: new google.maps.LatLng(35.1469, -79.3690),
+            map: map,
+            title: 'Weymouth Woods',
+            });
+        
+        var contentString40 = '<a href="http://ncparks.gov/Visit/parks/wewo/main.php" target="_blank"><h5>Weymouth Woods-Sandhills Nature Preserve</h5></a>' +
+        '<p>1024 Ft. Bragg Road<br/>Southern Pines, NC 28387</p>' +
+        '<img src="images/weymouthwoods.jpg" alt="Weymouth Woods" />'
+        
+        var infowindow40 = new google.maps.InfoWindow({
+            content: contentString40,
+        });
+        
+        google.maps.event.addListener(marker40, 'click', function(){
+            infowindow40.open(map,marker40);
+        });
+        
+        //marker41
+        var marker41 = new google.maps.Marker({
+            position: new google.maps.LatLng(35.8905, -78.7502),
+            map: map,
+            title: 'William B. Umstead',
+            });
+        
+        var contentString41 = '<a href="http://ncparks.gov/Visit/parks/wium/main.php" target="_blank"><h5>William B. Umstead State Park</h5></a>' +
+        '<p>8801 Glenwood Avenue<br/>Raleigh, NC 27617</p>' +
+        '<img src="images/williambumstead.jpg" alt="William B. Umstead" />'
+        
+        var infowindow41 = new google.maps.InfoWindow({
+            content: contentString41,
+        });
+        
+        google.maps.event.addListener(marker41, 'click', function(){
+            infowindow41.open(map,marker41);
+        });
+        
+      }
+      
+      google.maps.event.addDomListener(window, 'load', initialize);
+      
+    </script>
+  </head>
+  <body>
+    
+   <div class="header-back">
+   <div class="container">
+    <div class="header">
+    <div class="row">
+      
+      <div class="col-md-1">
+        <img src="images/pinegreen1.gif" alt="pine trees" height="85px" style="margin-top: 1.75em; display: inline-block; margin-left: 1em" />
+        </div><!--col-md-1 end-->
+        
+    <div class="col-md-8">
+    <h1 style="font-family: Pacifico; display: inline-block; margin-left: .7em">explore the natural beauty of</h1>
+    <h1 style="font-family: Avenir Next; display: inline-block; letter-spacing: 2px; font-size: 50px; line-height: 0px; margin-left: .5em"><b>NORTH CAROLINA</b></h1>
+    </div><!--col-md-6 end-->
+    
+    <div class="col-md-3">
+        <img src="images/pine4.gif" alt="pine trees" height="85px" style="margin-top: 1.75em; display: inline-block; float: right" />
+    </div><!--col-md-5 end-->    
+    </div><!--row end-->
+    </div><!--header end-->
+    
+    </div><!--container end-->
+    
+    <div class="row">
+      <div class="col-md-12">
+        <div class="header-bar"></div>
+      </div><!--col-md-12 end-->
+    </div><!--row end-->
+    </div><!--header-back end-->
+    <br/>
+    <div class="container">
+    <div class="stamps">
+      <div class="row">
+        
+        <div class="col-md-4">
+          <a data-scroll href="#mountains" ><img src=" images/stamp1.gif " height="200px" onmouseover="this.src=' images/stamp1opacity.gif '" onmouseout="this.src=' images/stamp1.gif '"  /></a>
+        </div><!--col-md-4 end-->
+        
+        <div class="col-md-4">
+          <a data-scroll href="#foothills" ><img src=" images/stamp2.gif " height="200px" onmouseover="this.src=' images/stamp2opacity.gif '" onmouseout="this.src=' images/stamp2.gif '"  /></a>
+        </div><!--col-md-4 end-->
+        
+        <div class="col-md-4">
+          <a data-scroll href="#beaches" ><img src=" images/stamp3.gif " height="200px" onmouseover="this.src=' images/stamp3opacity.gif '" onmouseout="this.src=' images/stamp3.gif '"  /></a>
+        </div><!--col-md-4 end-->
+        
+      </div><!--row end-->
+    </div><!--stamps end-->
+    
+    <div class="row">
+      <div class="col-md-12">
+        <p>No matter where you live in North Carolina, you are never far from the natural beauty that defines this state. From picnicking among the statuesque mountains in the Blue Ridge Parkway, to canoeing on a lake in Raleigh, to exploring historic military forts overlooking the Atlantic Ocean, North Carolina State Parks offer access to this natural beauty. With over 40 state parks scattered across the state, there are plenty of opportunities to get out there and experience the natural beauty of North Carolina.</p>
+      <br/>
+      <h4>Find which North Carolina State Park is nearest you.</h4>
+      </div><!--col-md-12 end-->
+    </div><!--row end-->
+    
+    <div class="row">
+      <div class="col-md-12">
+    <div id="map-canvas"></div>
+    </div><!--col-md-12 end-->
+    
+    
+    </div><!--row end-->
+    <br/>
+    
+    
+   
+
+
+    
+    
+    <br/>
+    <span id="mountains"></span>
+    
+    
+    <div class="mountains">
+      <div class="row">
+        <div class="col-md-12">
+    <div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+          <h1 style="font-family: Pacifico; display: inline-block;  font-size: 50px; padding-left: .5em">mountains</h1>
+          <img src="images/downarrow2.png" alt="down arrow" height="30px" style="display: inline-block; float: right; margin-top: 2em; padding-right: 2em" />
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in">
+      <div class="panel-body">
+    <div class="col-md-12">
+  
+    
+      <p>See who is exploring the North Carolina mountains, and post your own adventures on Twitter or Instagram using the hashtag <b>#NCmountains</b>.</p>
+      </div><!--col-md-12 end-->
+    <div class="col-md-7">
+      <img src="images/twitter.png" alt="twitter logo" height="40px" style="display: inline-block; float: left; padding-right: .5em; margin-top: .7em" />
+      <h3 style="display: inline-block">#NCmountains</h3>
+      <iframe src="http://oliviachall.com/ncstateparks/twitter/mountains/" width="100%" height="700px" style="display: inline-block"></iframe>
+    </div><!--col-md-7 end-->
+    
+    <div class="col-md-5">
+      <img src="images/instagram.png" alt="instagram logo" height="40px" style="display: inline-block; float: left; padding-right: .5em; margin-top: .7em" />
+      <h3 style="display: inline-block">#NCmountains</h3>
+      <iframe src="http://oliviachall.com/ncstateparks/instagram/mountains/" width="100%" height="700px" style="display: inline-block"></iframe>
+    </div><!--col-md-5 end-->
+    
+    </div>
+    </div>
+  </div>
+    
+   </div><!--col-md-12 end-->
+    </div><!--row end-->
+    </div><!--mountains end-->
+    
+    <br/>
+    <span id="foothills"></span>
+    
+    <div class="foothills">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+          <h1 style="font-family: Pacifico; display: inline-block;  font-size: 50px; padding-left: .5em">foothills</h1>
+          <img src="images/downarrow2.png" alt="down arrow" height="30px" style="display: inline-block; float: right; margin-top: 2em; padding-right: 2em" />
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse">
+      <div class="panel-body">
+     <div class="col-md-12">
+  
+    
+      <p>See who is exploring the North Carolina foothills, and post your own adventures on Twitter or Instagram using the hashtags <b>#enoriver</b> and <b>#NClakes</b>.</p>
+      
+      <div class="col-md-7">
+        <img src="images/twitter.png" alt="twitter logo" height="40px" style="display: inline-block; float: left; padding-right: .5em; margin-top: .7em" />
+      <h3 style="display: inline-block">#enoriver</h3>
+      <iframe src="http://oliviachall.com/ncstateparks/twitter/foothills/" width="100%" height="700px" style="display: inline-block"></iframe>
+    </div><!--col-md-7 end-->
+    
+    <div class="col-md-5">
+      <img src="images/instagram.png" alt="instagram logo" height="40px" style="display: inline-block; float: left; padding-right: .5em; margin-top: .7em" />
+      <h3 style="display: inline-block">#NClakes</h3>
+      <iframe src="http://oliviachall.com/ncstateparks/instagram/foothills/" width="100%" height="700px" style="display: inline-block"></iframe>
+    </div><!--col-md-5 end-->
+    
+    </div>
+    </div>
+  </div>    
+    
+   </div><!--col-md-12 end-->
+    </div><!--row end-->
+    </div><!--foothills end-->
+    
+    <br/>
+    <span id="beaches"></span>
+    
+    
+    <div class="beaches">
+      <div class="row">
+        <div class="col-md-12">
+           <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+          <h1 style="font-family: Pacifico; display: inline-block; font-size: 50px; padding-left: .5em">beaches</h1>
+          <img src="images/downarrow2.png" alt="down arrow" height="30px" style="display: inline-block; float: right; margin-top: 2em; padding-right: 2em" />
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse">
+      <div class="panel-body">
+    <div class="col-md-12">
+  
+    
+      <p>See who is out on the North Carolina beaches, and post your own adventures on Twitter or Instagram using the hashtag <b>#NCbeaches</b>.</p>
+    
+    <div class="col-md-7">
+      <img src="images/twitter.png" alt="twitter logo" height="40px" style="display: inline-block; float: left; padding-right: .5em; margin-top: .7em" />
+      <h3 style="display: inline-block">#NCbeaches</h3>
+      <iframe src="http://oliviachall.com/ncstateparks/twitter/beaches/" width="100%" height="700px" style="display: inline-block"></iframe>
+    </div><!--col-md-7 end-->
+    
+    <div class="col-md-5">
+      <img src="images/instagram.png" alt="instagram logo" height="40px" style="display: inline-block; float: left; padding-right: .5em; margin-top: .7em" />
+      <h3 style="display: inline-block">#NCbeaches</h3>
+      <iframe src="http://oliviachall.com/ncstateparks/instagram/beaches/" width="100%" height="700px" style="display: inline-block"></iframe>
+    </div><!--col-md-5 end-->
+    
+    </div>
+    </div>
+  </div>
+    
+   </div><!--col-md-12 end-->
+    </div><!--row end-->
+    </div><!--beaches end-->
+    </div><!--container end-->
+    </div><!--container end-->
+    </div><!--container end-->
+    </div><!--container end-->
+    
+    <br/>
+    <div class="footer">
+      <div class="row">
+      <div class="col-md-12">
+        <div class="header-bar"></div>
+      </div><!--col-md-12 end-->
+    </div><!--row end-->
+    </div><!--header-back end-->
+    
+    <a href="#" class="stickyScroll"><img src="images/scrolltotop.png"></a>
+
+    </div><!--footer end-->
+    
+    <script>
+    smoothScroll.init();
+    </script>
+    
+     <!-- JavaScript  for sticky button-->
+	<script>
+		$(document).ready(function() {
+			// Show or hide the sticky footer button
+			$(window).scroll(function() {
+				if ($(this).scrollTop() > 200) {
+					$('.stickyScroll').fadeIn(200);
+				} else {
+					$('.stickyScroll').fadeOut(200);
+				}
+			});
+			
+			// Animate the scroll to top
+			$('.stickyScroll').click(function(event) {
+				event.preventDefault();
+				
+				$('html, body').animate({scrollTop: 0}, 500);
+			})
+		});
+	</script>
+
+    
+    
+  </body>
+</html>
